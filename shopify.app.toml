@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "rest-api-3rd"
+client_id = "2849991ea56666d3347fabe50eeb5391"
+application_url = "https://douglas-wild-textbook-pole.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://douglas-wild-textbook-pole.trycloudflare.com/auth/callback",
+  "https://douglas-wild-textbook-pole.trycloudflare.com/auth/shopify/callback",
+  "https://douglas-wild-textbook-pole.trycloudflare.com/api/auth/callback",
+  "https://douglas-wild-textbook-pole.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "gryshyn.myshopify.com"
